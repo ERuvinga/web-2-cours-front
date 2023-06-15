@@ -57,15 +57,12 @@ nav .list {
     margin-right: 5px;
 }
 
-.nodisplay {
-    display: none;
-    transition: all .5s;
-}
+
 
 /*Media*/
 
 @media screen and (max-width: 550px) {
-    header nav .nav-list {
+    .displayNav {
         list-style: none;
 
         display: flex;
@@ -82,6 +79,12 @@ nav .list {
     header .logo i {
         display: block;
         color: #505050;
+    }
+
+
+    header nav .nav-list {
+        display: none;
+        transition: all .5s;
     }
 
 }
