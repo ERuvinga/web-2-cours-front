@@ -19,6 +19,21 @@ header .logo img {
     height: 40px;
 }
 
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo i {
+    display: none;
+}
+
+header .logo i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 header nav .nav-list {
     list-style: none;
     display: flex;
@@ -42,6 +57,11 @@ nav .list {
     margin-right: 5px;
 }
 
+.nodisplay {
+    display: none;
+    transition: all .5s;
+}
+
 /*Media*/
 
 @media screen and (max-width: 550px) {
@@ -58,4 +78,10 @@ nav .list {
         margin: 10px 0;
         width: 150px;
     }
+
+    header .logo i {
+        display: block;
+        color: #505050;
+    }
+
 }
