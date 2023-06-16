@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>formulaire Inscription</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <meta name="author" content="Elie Ruvinga" />
+    <meta name="keywords" content="Cours, Web" />
+    <meta name="description" content="Cours Web2" />
+
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./style/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 card form-control">
+                <h1 class="card-header bg-info text-white text-center">FORMULAIRE D'ETUDIANT</h1>
+                <div class="card-body">
+                    <form action="table.php" method="POST" class="formulaire">
+                        <div class="form-group">
+                            <label for="fname">Nom *</label>
+                            <input type="text" class="form-control" name="fname" placeholder="nom" required
+                                id="fname" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Postnom *</label>
+                            <input type="text" class="form-control" name="lname" placeholder="Postnom" required
+                                id="lname" />
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" name="age" placeholder="age" required id="age" />
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Genre</label>
+                            <select name="gender" id="gender">
+                                <option>Masc</option>
+                                <option>Fem</option>
+                            </select>
+                        </div>
+
+                        <div class="btns">
+                            <input type="reset" value="initilisation" class="btn btn-warning" />
+                            <input type="submit" value="Envoit" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        </div>
+    </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
